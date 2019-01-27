@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PodWechatSDK_Example' do
+  pod 'PodWechatSDK', :path => '../'
+
+  target 'PodWechatSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
