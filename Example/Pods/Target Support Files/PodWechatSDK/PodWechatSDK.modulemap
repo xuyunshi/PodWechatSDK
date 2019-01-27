@@ -1,0 +1,6 @@
+framework module PodWechatSDK {
+  umbrella header "PodWechatSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module NMWxFramwork {
+  umbrella header "NMWxFramwork.h"
+
+  export *
+  module * { export * }
+}

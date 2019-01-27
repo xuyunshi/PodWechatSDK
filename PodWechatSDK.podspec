@@ -25,10 +25,11 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '405029644@qq.com' => '405029644@qq.com' }
-  s.source           = { :git => 'https://github.com/405029644@qq.com/PodWechatSDK.git', :tag => s.version.to_s }
+  s.swift_version = '4.1'
+  s.source           = { :git => 'https://github.com/xuyunshi/PodWechatSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
+  s.vendored_frameworks ='PodWechatSDK/Vendor/*.framework'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'PodWechatSDK/Classes/**/*'
   
@@ -39,4 +40,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 end

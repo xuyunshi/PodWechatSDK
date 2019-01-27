@@ -1,0 +1,16 @@
+PODS:
+  - PodWechatSDK (0.1.0)
+
+DEPENDENCIES:
+  - PodWechatSDK (from `../`)
+
+EXTERNAL SOURCES:
+  PodWechatSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PodWechatSDK: cd5fe9520a4f732f8737aee0037fe2990d162936
+
+PODFILE CHECKSUM: 03f30517d6a6f83cb02e4e602391b06d0567e241
+
+COCOAPODS: 1.5.3

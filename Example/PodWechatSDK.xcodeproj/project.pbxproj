@@ -40,12 +40,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6773F4CE9B5222CA66179C62 /* Pods_PodWechatSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodWechatSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D1CF2EDA740E819B6284022 /* PodWechatSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PodWechatSDK.podspec; path = ../PodWechatSDK.podspec; sourceTree = "<group>"; };
+		6D1CF2EDA740E819B6284022 /* PodWechatSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PodWechatSDK.podspec; path = ../PodWechatSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93BD8E5F2112137F8D8153AE /* Pods-PodWechatSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodWechatSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodWechatSDK_Tests/Pods-PodWechatSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		95930E39A80784D5AB42BA76 /* Pods-PodWechatSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodWechatSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodWechatSDK_Example/Pods-PodWechatSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B8E4C676049E5F81B428EB /* Pods-PodWechatSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodWechatSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodWechatSDK_Tests/Pods-PodWechatSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CC0109DFE92FB423F744EDCB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F0A358BB842C60572C63A039 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CC0109DFE92FB423F744EDCB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F0A358BB842C60572C63A039 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F27C4B98DDD4806F8132F616 /* Pods-PodWechatSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodWechatSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodWechatSDK_Example/Pods-PodWechatSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -266,15 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PodWechatSDK_Example-checkManifestLockResult.txt",
 			);
@@ -288,16 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PodWechatSDK_Example/Pods-PodWechatSDK_Example-frameworks.sh",
+				"${PODS_ROOT}/../../PodWechatSDK/Vendor/NMWxFramwork.framework",
 				"${BUILT_PRODUCTS_DIR}/PodWechatSDK/PodWechatSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMWxFramwork.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PodWechatSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,15 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PodWechatSDK_Tests-checkManifestLockResult.txt",
 			);
